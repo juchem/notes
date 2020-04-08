@@ -35,3 +35,11 @@
 
 # she-bang and options
 - with current env (`-S` to `env` means the command has multiple tokens): `#!/usr/bin/env -S bash -xe`
+
+# see also
+- manual:
+  - variable expansion: https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion
+  - features: https://www.gnu.org/software/bash/manual/bash.html#Bash-Features
+- advanced bash scripting: http://tldp.org/LDP/abs/html/abs-guide.html
+- misc:
+  - case conversion: https://stackoverflow.com/a/2264537/1284956
