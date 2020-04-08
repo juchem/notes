@@ -6,20 +6,23 @@
 # arrays
 - declare hash table: `declare -a foo`
 - inline init array: `foo=(value1 value2 "value 3")
-- multi-line init array: ```foo=( \
-    value1
-    value2
-    "value 3"
-  )```
+- multi-line init array: ```
+foo=( \
+  value1
+  value2
+  "value 3"
+)
+```
 
 # hash tables
 - declare hash table: `declare -A foo`
 - inline init hash table: `foo=([key1]=value1 [key2]="value 2" ["key 3"]=value3)
 - hash table keys as array: `${!foo[@]}`
 - iterate over hash table entries: ```
-  for key in "${!foo[@]}"; do
-    echo "value: ${foo[${key}}}"
-  done```
+for key in "${!foo[@]}"; do
+  echo "value: ${foo[${key}}}"
+done
+```
 
 # debugging
 - enable print commands as they're executed: `set -x`

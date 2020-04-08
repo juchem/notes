@@ -2,12 +2,12 @@
 - logs: `/var/log/mysql/error.log`
 - ensure users have privileges to for the host they're connecting from
 - debug with telnet: ```
-  $ telnet example.com 3306
-  Trying 255.0.0.71...
-  Connected to example.com.
-  Escape character is '^]'.
-  FHost '255.0.0.70' is not allowed to connect to this MySQL serverConnection closed by foreign host.
-  ```
+$ telnet example.com 3306
+Trying 255.0.0.71...
+Connected to example.com.
+Escape character is '^]'.
+FHost '255.0.0.70' is not allowed to connect to this MySQL serverConnection closed by foreign host.
+```
 
 # simple dev settings
 - localhost access only: ```
