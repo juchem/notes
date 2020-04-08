@@ -1,7 +1,8 @@
 # general debugging
 - logs: `/var/log/mysql/error.log`
 - ensure users have privileges to for the host they're connecting from
-- debug with telnet: ```
+- debug with telnet:
+```
 $ telnet example.com 3306
 Trying 255.0.0.71...
 Connected to example.com.
@@ -10,11 +11,13 @@ FHost '255.0.0.70' is not allowed to connect to this MySQL serverConnection clos
 ```
 
 # simple dev settings
-- localhost access only: ```
+- localhost access only:
+```
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON database_name.table_name TO 'username'@'localhost';
 ```
-- access from any host: ```
+- access from any host:
+```
 CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON database_name.table_name TO 'username'@'%';
 ```

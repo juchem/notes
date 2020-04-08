@@ -1,5 +1,6 @@
 # generate certs
-- script to generate self-signed dev certificates unnatended: ```
+- script to generate self-signed dev certificates unnatended:
+```
 CA_CERT_DEV_PASSWORD="1234"
 
 echo 01 > serial
