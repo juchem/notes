@@ -1,5 +1,6 @@
 # general debugging
 - logs: `/var/log/mysql/error.log`
+- ensure users have privileges to for the host they're connecting from
 - debug with telnet: ```
   $ telnet example.com 3306
   Trying 255.0.0.71...
